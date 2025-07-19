@@ -2,7 +2,9 @@ import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
 import "dotenv/config"
+import connectDB from "./config/db.js"
 
+connectDB();
 const app = express()
 
 app.use(express.json())

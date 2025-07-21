@@ -2,11 +2,29 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
 
-    name:{
+    _id:{
+        type:mongoose.Schema.Types.ObjectId,
+        auto:true
+    },
+    username:{
         type: String,
         required:true,
         trim:true,
         maxlength:[50, 'Name cannot exceed 50 characters']
+    },
+    firstName:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    lastName:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    avatar:{
+        type:String,
+        default:null
     },
     email:{
         type:String,
@@ -21,6 +39,11 @@ const userSchema = new mongoose.Schema({
         required:true,
         minlength:[6,'Password must be atleast 6 characters']
     },
+    role:{
+        type:String,
+        enum:['user','admin'],
+        default:'user'
+    },
     preferences:{
         aiSuggestion:{
             type:Boolean,
@@ -30,6 +53,10 @@ const userSchema = new mongoose.Schema({
             type:Boolean,
             default:true
         }
+    },
+    lastActive:{
+        type:Date,
+        default:Date.now
     }
 
 

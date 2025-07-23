@@ -9,7 +9,23 @@ const LandingPage = () => {
     useEffect(() => {
         setIsVisible(true);
     }, []);
-
+    const features = [
+        {
+          icon: <Brain className="w-8 h-8 text-red-500" />,
+          title: "AI-Powered Intelligence",
+          description: "Advanced algorithms that learn your workflow and optimize task management automatically."
+        },
+        {
+          icon: <Target className="w-8 h-8 text-red-500" />,
+          title: "Smart Prioritization",
+          description: "Automatically prioritize tasks based on deadlines, importance, and your productivity patterns."
+        },
+        {
+          icon: <Zap className="w-8 h-8 text-red-500" />,
+          title: "Lightning Fast",
+          description: "Instant task creation, updates, and insights powered by cutting-edge AI technology."
+        }
+      ];
 
   return (
     <div>
@@ -104,6 +120,30 @@ const LandingPage = () => {
               <CheckCircle className="w-4 h-4 text-green-500" />
               <span>Cancel anytime</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Why Choose <span className="text-red-500">Flow AI</span>?
+            </h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Experience the future of task management with AI that understands your needs and adapts to your workflow.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8 hover:border-red-500/50 transition-all duration-300 hover:scale-105">
+                <div className="mb-6">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

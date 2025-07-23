@@ -109,6 +109,27 @@ const LandingPage = () => {
       </section>
 
 
+
+      <footer className="border-t border-gray-800 py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex items-center space-x-2 mb-4 md:mb-0">
+              <div className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center">
+                <img src="/flowai-logo.png" alt="" />
+              </div>
+              <span className="text-xl font-bold">Flow AI</span>
+            </div>
+            
+            
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>&copy; 2025 Flow AI. All rights reserved. Created By Atharva Patil</p>
+          </div>
+        </div>
+      </footer>
+
+
     </div>
   )
 }

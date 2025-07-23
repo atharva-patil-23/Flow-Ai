@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ArrowRight, CheckCircle, Zap, Brain, Target } from 'lucide-react';
+import {CheckCircle, Zap, Brain, Target } from 'lucide-react';
 
 
 const LandingPage = () => {
@@ -29,6 +29,7 @@ const LandingPage = () => {
 
   return (
     <div>
+        {/* navbar */}
         <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -56,6 +57,7 @@ const LandingPage = () => {
       </header>
 
 
+        {/* hero section */}
       <section className="relative min-h-screen flex items-center justify-center">
    
         <div className="absolute inset-0 overflow-hidden">
@@ -149,7 +151,7 @@ const LandingPage = () => {
       </section>
 
 
-
+        {/* footer */}
       <footer className="border-t border-gray-800 py-12 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center justify-between">

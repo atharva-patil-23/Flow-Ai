@@ -34,7 +34,7 @@ const SignupPage = () => {
               <div className="space-y-0.5">
 
                 <label htmlFor="name">Full Name</label>
-                <br />
+                
                 <input 
                 type="text" 
                 name="name" 

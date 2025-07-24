@@ -72,13 +72,21 @@ const LandingPage = () => {
           </div>
         </div>
       </header>
+      
 
 
         {/* hero section */}
+        
       <section className="relative min-h-screen flex items-center justify-center">
+
+        
    
         <div className="absolute inset-0 overflow-hidden">
+
+          
           <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-black to-red-900/10"></div>
+
+            
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,0,0,0.1),transparent_50%)]"></div>
 
           <div className="absolute inset-0">
@@ -98,6 +106,14 @@ const LandingPage = () => {
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          {/* site down badge */}
+          <div className="fade-in">
+            <div className="inline-flex items-center gap-3 bg-red-500/20 border     border-primary/20 rounded-full px-6 py-3 mb-7">
+              <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
+              <span className="text-sm font-medium text-primary">Improving Things… Be Right Back!</span>
+            </div>
+          </div>
+
           <h1 className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>

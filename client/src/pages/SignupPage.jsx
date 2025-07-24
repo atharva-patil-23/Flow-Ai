@@ -26,12 +26,12 @@ const SignupPage = () => {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-6">
         <div className="relative z-10 w-full max-w-md">
-        <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8">
-          <h1 className="text-3xl font-bold text-center mb-2">Get Started</h1>
-          <p className="text-gray-400 text-center mb-8">Create your Flow AI account</p>
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-8">
+            <h1 className="text-3xl font-bold text-center mb-2">Get Started</h1>
+            <p className="text-gray-400 text-center mb-8">Create your Flow AI account</p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-2">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-0.5">
 
                 <label htmlFor="name">Full Name</label>
                 <br />
@@ -44,53 +44,39 @@ const SignupPage = () => {
                 onChange={handleChange}
                 className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
                 required />
-            </div>
+              </div>
 
-            <div className="space-y-2">
+              <div className="space-y-1">
               
-              <label htmlFor="name">Email</label>
+                <label htmlFor="name">Email</label>
               
-              <input 
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@company.com"
-                value={formData.email}
-                onChange={handleChange}
-                className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
-                required
-              />
-            </div>
+                <input 
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@company.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
+                  required
+                />
+              </div>
 
-            <div className="space-y-2">
+            <div className="space-y-1">
               
               <label htmlFor="password">Password</label>
               
-              <input 
-                id="password"
-                name="password"
-                type="password"
-                placeholder="Create a password"
-                value={formData.password}
-                onChange={handleChange}
-                className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
-                required />
+                <input 
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Create a password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
+                  required />
             </div>
 
-            <div className="space-y-2">
-
-              <label htmlFor="confirmPassword">Confirm Password</label>
-
-              <input type="password" 
-                name="password"
-                id="confirmpassword"
-                placeholder="Confirm your password"
-                value={formData.confirmPassword}
-                onChange={handleChange}
-                className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 focus:border-red-500 w-full my-2 p-2 rounded-md"
-                required
-              />
-            </div>
 
             <div className="flex items-start">
               <input type="checkbox" className="mr-2 mt-1" required />
@@ -123,6 +109,13 @@ const SignupPage = () => {
             </p>
           </div>
         </div>
+        <Link 
+                    to="/" 
+                    className="inline-flex items-center text-gray-400 hover:text-white transition-colors mb-8"
+                  >
+                    <ArrowLeft className="w-4 h-4 mr-2" />
+                    Back to home
+                  </Link>
         </div>
     </div>
 

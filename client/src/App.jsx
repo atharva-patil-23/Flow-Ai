@@ -2,6 +2,7 @@ import { useState } from 'react'
 import {Routes , Route} from 'react-router-dom'
 import LandingPage from "./pages/LandingPage.jsx"
 import SignupPage from './pages/SignupPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 
 function App() {
   

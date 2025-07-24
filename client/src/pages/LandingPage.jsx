@@ -13,11 +13,11 @@ const LandingPage = () => {
     const Navigate =  useNavigate()
 
     const handleSignupClick = () => {
-      navigate('/signup');
+      Navigate('/signup');
     };
 
     const handleLoginClick = () => {
-      navigate('/login');
+      Navigate('/login');
     };
 
     const features = [
@@ -65,7 +65,9 @@ const LandingPage = () => {
               </button>
               
              
-              <button onClick={handleLoginClick} className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg">Login</button>
+              <button onClick={handleLoginClick} className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg">
+                Login
+              </button>
             </div>
           </div>
         </div>

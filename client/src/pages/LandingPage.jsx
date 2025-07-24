@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {CheckCircle, Zap, Brain, Target } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -7,8 +8,18 @@ const LandingPage = () => {
     const [isVisible, setIsVisible] = useState(false)
 
     useEffect(() => {
-        setIsVisible(true);
+        setIsVisible(true); 
     }, []);
+    const Navigate =  useNavigate()
+
+    const handleSignupClick = () => {
+      navigate('/signup');
+    };
+
+    const handleLoginClick = () => {
+      navigate('/login');
+    };
+
     const features = [
         {
           icon: <Brain className="w-8 h-8 text-red-500" />,
@@ -48,9 +59,13 @@ const LandingPage = () => {
             
             <div className="flex items-center space-x-4">
             
-              <button className="text-white hover:bg-gray-800 px-5 py-2 rounded-lg"> Sign In </button>
+              
+              <button onClick={handleSignupClick} className="text-white hover:bg-gray-800 px-5 py-2 rounded-lg pointer">
+              Sign In
+              </button>
+              
              
-              <button className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg">Login</button>
+              <button onClick={handleLoginClick} className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg">Login</button>
             </div>
           </div>
         </div>

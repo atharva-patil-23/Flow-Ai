@@ -117,8 +117,8 @@ const LandingPage = () => {
           <h1 className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            The AI Task Management
-            <span className="text-red-500 block">Revolution</span>
+ 
+            Flow Ai
           </h1>
           
           <p className={`text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${

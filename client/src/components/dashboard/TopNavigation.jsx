@@ -20,9 +20,9 @@ const TopNavigation = ({
       <div className="flex items-center gap-3">
         <button
           onClick={onToggleSidebar}
-          className="p-2 bg-gray-500  hover:bg-gray-700 rounded-lg transition-colors"
+          className="p-2 hover:bg-gray-200 rounded-lg transition-colors"
         >
-          <Menu className="h-5 w-5" />
+          <Menu className="h-5 w-5 text-black" />
         </button>
         
         <div className="relative">

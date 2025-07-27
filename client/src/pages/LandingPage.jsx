@@ -143,18 +143,7 @@ const LandingPage = () => {
           <div className={`flex items-center justify-center space-x-6 text-sm text-gray-400 transition-all duration-1000 delay-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-green-500" />
-              <span>No credit card required</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-green-500" />
-              <span>14-day free trial</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-green-500" />
-              <span>Cancel anytime</span>
-            </div>
+          
           </div>
         </div>
       </section>

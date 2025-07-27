@@ -135,7 +135,7 @@ const LandingPage = () => {
             placeholder="Enter your Email" 
             className="bg-gray-800/50 border-gray-700 text-white placeholder-gray-400 w-full sm:w-80 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-md my-2 p-2" />
         
-            <button className=" flex bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-md w-full sm:w-auto">
+            <button onClick={handleSignupClick} className="flex bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-md w-full sm:w-auto">
                 Start with Flow AI
             </button>
           </div>
